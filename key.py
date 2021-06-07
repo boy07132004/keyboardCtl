@@ -28,6 +28,11 @@ def on_press(key):
         elif (key.char == 'q'):
             money = money_
             go(money)
+        elif (key.char == '-'):
+            ctr.type([keyboard.Key.backspace])
+            ctr.type(f'取消')
+            ctr.type([keyboard.Key.enter])
+
     except AttributeError:
         pass
 
